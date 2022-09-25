@@ -49,8 +49,7 @@ git remote add nombre_conexion https://github.com/example/repository.git
 ```
 git branch -u origin/nombre_del_nuevo_branch
 ```
->```origin``` es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch```<br>
->Siempre se debe realizar para poder hacer ```git pull``` a algún branch
+> **origin** es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch``` <br> <br> Siempre se debe realizar para poder hacer ```git pull``` a algún branch
 <br>
 <br>
 
@@ -70,7 +69,7 @@ git add ARCHIVO.txt       #Sirve para pasar un solo archivo
 git add *.txt             #Sirve para pasar todos los archivos que terminen en .txt
 git add --all             #Sirve para pasar todos los archivos
 ```
-2. *Opcional:* Remover archivos del staging area
+2. **Opcional:** Remover archivos del staging area
 ```
 git restore --staged ARCHIVO.txt
 ```
