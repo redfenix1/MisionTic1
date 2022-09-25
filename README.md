@@ -50,17 +50,19 @@ git remote add nombre_conexion https://github.com/example/repository.git
 git branch -u origin/nombre_del_nuevo_branch
 ```
 >```origin``` es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch```
+<br>
+<br>
 
----
+***
 
-# Comandos GIT para subir o bajar datos
-# Bajar archivos
+# Comandos GIT para subir, bajar datos y otros
+## Bajar archivos
 1. Bajar datos del repository(remoto) al working directory(local)
 ```
 git pull
 ```
 > Siempre debe ser el primer comando en usarse, y sirve para bajar los datos de Github a nuestro entorno local
-# Subir archivos
+## Subir archivos
 1. Pasar los datos a staging area
 ```
 git add ARCHIVO.txt       #Sirve para pasar un solo archivo
@@ -80,4 +82,16 @@ git commit -m "Mensaje de registro para el commit"
 ```
 git push
 ```
-
+## Otros comandos
+1. Comando para ver los archvivos pendientes por enviar al staging area
+```
+git status
+```
+2. Comando para ver los commit realizados
+```
+git log
+```
+3. Comando para ver las diferencia entre archivos (working directory vs. repository (local))
+```
+git diff nombre_del_archivo
+```
