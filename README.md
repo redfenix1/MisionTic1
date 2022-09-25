@@ -49,7 +49,7 @@ git remote add nombre_conexion https://github.com/example/repository.git
 ```
 git branch -u origin/nombre_del_nuevo_branch
 ```
->```origin``` es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch```
+>```origin``` es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch```<br>
 >Siempre se debe realizar para poder hacer ```git pull``` a algún branch
 <br>
 <br>
