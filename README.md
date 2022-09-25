@@ -91,7 +91,8 @@ git status
 ```
 git log
 ```
-3. Comando para ver las diferencia entre archivos (working directory vs. repository (local))
+3. Comando para ver las diferencias
 ```
-git diff nombre_del_archivo
+git diff nombre_del_archivo               #Entre archivos (working directory vs. repository (local))
+git diff branch1..branch2                 #Comparar dos branch
 ```
