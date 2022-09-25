@@ -5,7 +5,7 @@ git config --global user.name "nombre de usuario"
 git config --global user.email "correo@dominio.com"
 ```
 ## Clonar un repo
-1. Crear una carpeta en el equipo, ubicarse en ella y abrir git-bash ```clic derecho > git-bash```
+1. Crear una carpeta en el equipo, ubicarse en ella y abrir git-bash **clic derecho > git-bash**
 ```
 git init
 ```
@@ -17,7 +17,7 @@ git clone https://github.com/redfenix1/MisionTicGrupo.git
 ```
 cd MisionTicGrupo
 ```
->Ver que pasa de ```master``` a ```main```
+>Ver que cambia de ```master``` a ```main```
 ## Vincular con Github
 ```
 git remote add origin https://github.com/redfenix1/MisionTicGrupo.git
@@ -26,7 +26,7 @@ git remote add origin https://github.com/redfenix1/MisionTicGrupo.git
 1. Consultar los branch
 ```
 git branch            #Listar las branch locales
-git branch -a       #Listar todas las branch, locales y remotas
+git branch -a         #Listar todas las branch, locales y remotas
 ```
 2. Crear el branch
 ```
@@ -40,8 +40,8 @@ git checkout nombre_del_nuevo_branch
 ```
 git remote -v
 ```
->Generalmente hay una conexión que se llama ```origin``` y debe tener la direccion del git, por lo general trabajaremos con esa.
-## *Opcional:* Crear nueva conexión
+>Generalmente hay una conexión que se llama **origin*** y debe tener la direccion del git, por lo general trabajaremos con esa.
+## **Opcional:** Crear nueva conexión
 ```
 git remote add nombre_conexion https://github.com/example/repository.git
 ```
@@ -79,7 +79,7 @@ git restore --staged ARCHIVO.txt
 git commit -m "Mensaje de registro para el commit"
 ```
 >El mensaje debe identificar brevemente los cambios realizados en este cargue de información
-4. Pasar los archivos del repositorio(loca) al repositorio(remoto)
+4. Pasar los archivos del repositorio(local) al repositorio(remoto)
 ```
 git push
 ```
@@ -102,13 +102,17 @@ git diff branch1..branch2         #Comparar dos branch
 git rm ARCHIVO.txt                #Elimina el archivo del repository
 rm ARCHIVO.txt                    #ELimina el archivo de forma local, sirve para los archivos que no están en el staging area
 ```
+5. Para resolver el error del HEAD
+```
+git branch --unset-upstream
+```
 # Comandos GIT para combinar ramas
 ## Unir ramas
 ```
-git checkot rama_principal                  #Es la rama donde va a quedar la información
-git merge rama_secundaria                   #Es la rama que queremos fusionar con la principal
+git checkot rama_principal        #Es la rama donde va a quedar la información
+git merge rama_secundaria         #Es la rama que queremos fusionar con la principal
 ```
-## _CUIDADO_ Eliminar ramas
+## _¡CUIDADO!_ Eliminar ramas
 ```
 git branch -d nombre_del_branch             #Eliminar el branch localmente
 git push origin --delete nombre_del_branch  #Eliminar el brach remotamente
