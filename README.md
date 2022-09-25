@@ -25,7 +25,8 @@ git remote add origin https://github.com/redfenix1/MisionTicGrupo.git
 ## Trabanajo con Branch
 1. Consultar los branch
 ```
-git branch
+git branch            #Listar las branch locales
+git branch -a       #Listar todas las branch, locales y remotas
 ```
 2. Crear el branch
 ```
@@ -49,7 +50,7 @@ git remote add nombre_conexion https://github.com/example/repository.git
 ```
 git branch -u origin/nombre_del_nuevo_branch
 ```
-> **origin** es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch``` <br> <br> Siempre se debe realizar para poder hacer ```git pull``` a algún branch
+> **origin** es la conexión por defecto, puede usar alguna otra por ejemplo: ```git branch -u nombre_conexion/nombre_del_nuevo_branch``` <br> Siempre se debe realizar para poder hacer ```git pull``` a algún branch
 <br>
 <br>
 
@@ -109,6 +110,8 @@ git merge rama_secundaria                   #Es la rama que queremos fusionar co
 ```
 ## _CUIDADO_ Eliminar ramas
 ```
-git branch -d nombre_del_branch
+git branch -d nombre_del_branch             #Eliminar el branch localmente
+git push origin --delete nombre_del_branch  #Eliminar el brach remotamente
 ```
+>La conexión **origin** es la que se usa por defecto, se pueden ver todas las branch con ```git branch -a``` <br>
 >Se recomienda eliminar las ramas que no se necesiten, teniendo precauión que la información se ha subido
