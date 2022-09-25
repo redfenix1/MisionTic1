@@ -22,7 +22,7 @@ cd MisionTicGrupo
 ```
 git remote add origin https://github.com/redfenix1/MisionTicGrupo.git
 ```
-## Branch
+## Trabanajo con Branch
 1. Consultar los branch
 ```
 git branch
@@ -93,6 +93,22 @@ git log
 ```
 3. Comando para ver las diferencias
 ```
-git diff nombre_del_archivo               #Entre archivos (working directory vs. repository (local))
-git diff branch1..branch2                 #Comparar dos branch
+git diff nombre_del_archivo       #Entre archivos (working directory vs. repository (local))
+git diff branch1..branch2         #Comparar dos branch
 ```
+4. Eliminar archivos
+```
+git rm ARCHIVO.txt                #Elimina el archivo del repository
+rm ARCHIVO.txt                    #ELimina el archivo de forma local, sirve para los archivos que no están en el staging area
+```
+# Comandos GIT para combinar ramas
+## Unir ramas
+```
+git checkot rama_principal                  #Es la rama donde va a quedar la información
+git merge rama_secundaria                   #Es la rama que queremos fusionar con la principal
+```
+## **CUIDADO** Eliminar ramas
+```
+git branch -d nombre_del_branch
+```
+>Se recomienda eliminar las ramas que no se necesiten
