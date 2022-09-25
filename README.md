@@ -107,8 +107,8 @@ rm ARCHIVO.txt                    #ELimina el archivo de forma local, sirve para
 git checkot rama_principal                  #Es la rama donde va a quedar la información
 git merge rama_secundaria                   #Es la rama que queremos fusionar con la principal
 ```
-## **CUIDADO** Eliminar ramas
+## _CUIDADO_ Eliminar ramas
 ```
 git branch -d nombre_del_branch
 ```
->Se recomienda eliminar las ramas que no se necesiten
+>Se recomienda eliminar las ramas que no se necesiten, teniendo precauión que la información se ha subido
