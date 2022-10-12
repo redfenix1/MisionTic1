@@ -81,10 +81,9 @@ git commit -m "Mensaje de registro para el commit"
 >El mensaje debe identificar brevemente los cambios realizados en este cargue de información
 4. Pasar los archivos del repositorio(local) al repositorio(remoto)
 ```
-git push
-git push origin nombre_del_nuevo_branch
+git push                                    #Envío normal, a la rama por defecto
+git push origin nombre_del_nuevo_branch     #Para forzar el envío a un branch específico
 ```
-> El segundo comando sirve para forzar el envío a una rama específica
 ## Otros comandos
 1. Comando para ver los archvivos pendientes por enviar al staging area
 ```
