@@ -109,7 +109,7 @@ git branch --unset-upstream
 # Comandos GIT para combinar ramas
 ## Unir ramas
 ```
-git checkot rama_principal        #Es la rama donde va a quedar la información
+git checkout rama_principal        #Es la rama donde va a quedar la información
 git merge rama_secundaria         #Es la rama que queremos fusionar con la principal
 ```
 ## _¡CUIDADO!_ Eliminar ramas
