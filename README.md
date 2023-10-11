@@ -100,8 +100,9 @@ git diff branch1..branch2         #Comparar dos branch
 ```
 4. Eliminar archivos
 ```
-git rm ARCHIVO.txt                #Elimina el archivo del repository
+git rm ARCHIVO.txt                #Elimina el archivo del repository y en local
 rm ARCHIVO.txt                    #ELimina el archivo de forma local, sirve para los archivos que no están en el staging area
+git rm --cached ARCHIVO.txt       #Elimina el archivo en el repositorio
 ```
 5. Para resolver el error del HEAD
 ```
